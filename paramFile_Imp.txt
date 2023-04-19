@@ -1,0 +1,3 @@
+fformat=ascii
+file=clusterfields4.ascii
+out=VisIVOServerBinary
