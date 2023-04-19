@@ -1,0 +1,7 @@
+input=VisIVOServerBinary.bin
+out=VisIVOServerImage
+x=X
+y=Y
+z=Z
+scale=yes
+glyphs=pixel
