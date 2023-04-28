@@ -25,3 +25,22 @@ steps:
       srcView1: importer/outImp0
       srcView2: importer/outImp1
     out: [outView]
+
+$namespaces:
+  s: https://schema.org/
+
+s:author:
+  - class: s:Person
+    s:identifier: https://orcid.org/0000-0002-5574-2787
+    s:email: eva.sciacca@inaf.it
+    s:name: Eva Sciacca
+  - class: s:Person
+    s:identifier: https://orcid.org/0000-0001-9290-2017
+    s:email: iacopo.colonnelli@unito.it
+    s:name: Iacopo Colonnelli
+  - class: s:Person
+    s:identifier: https://orcid.org/0000-0003-1119-4237
+    s:email: valentina.cesare@inaf.it
+    s:name: Valentina Cesare
+
+s:license: https://spdx.org/licenses/Apache-2.0

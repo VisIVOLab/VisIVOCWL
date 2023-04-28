@@ -9,7 +9,9 @@ StreamFlow version 0.2.0.dev4
 Workflow n. 1: Generate four .png images by running in sequence a VisIVO importer and a VisIVO viewer instances.
 ------------------------
 The workflow "docker_VisIVO_ImpView_Workflow.cwl" can be executed with the command:
+
 cwl-runner docker_VisIVO_ImpView_Workflow.cwl docker-job_VisIVO_ImpView_Workflow.yml
+
 
 This workflow executes, in sequence, a command "VisIVOImporter" and a command "VisIVOViewer" of this kind:
 1) VisIVOImporter --fformat ascii clusterfields4.ascii
