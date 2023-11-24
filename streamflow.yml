@@ -1,0 +1,9 @@
+version: v1.0
+workflows:
+  visivo:
+    config:
+      docker:
+        - step: /
+          deployment:
+            type: singularity
+            config: {}
