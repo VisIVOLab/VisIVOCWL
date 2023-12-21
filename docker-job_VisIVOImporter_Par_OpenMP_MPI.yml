@@ -1,0 +1,8 @@
+message: 2
+srcImpnp: 4
+srcImp0:
+  class: File
+  path: paramFile_Imp_Par_MPI.txt
+srcImp1:
+  class: Directory
+  path: snapdir
