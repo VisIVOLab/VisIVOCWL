@@ -1,0 +1,1 @@
+cwl-runner docker_VisIVO_ImpFilterF1F2View_Workflow_GADGET.cwl docker-job_VisIVO_ImpFilterF1F2View_Workflow_GADGET.yml
