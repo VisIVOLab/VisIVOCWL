@@ -87,7 +87,7 @@ Specifically, the three commands that are executed by the workflow are:
 1) export OMP_NUM_THREADS=2 && mpirun --np 4 --allow-run-as-root VisIVOImporter paramFile_Imp_Par_MPI.txt
 2) VisIVOFilter paramFile_Filter_F1.txt 
 3) VisIVOFilter paramFile_Filter_F2.txt  
-3) VisIVOViewer paramFile_View_GADGET_Post_F2.txt
+4) VisIVOViewer paramFile_View_GADGET_Post_F2.txt
 where each "paramFile" contains the above command specifications.
 
 The steps of the workflow can be executed separately with the commands:
