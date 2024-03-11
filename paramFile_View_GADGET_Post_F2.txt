@@ -1,0 +1,9 @@
+input=NewTableHALOMerge.bin
+out=VisIVOServerImage
+x=POS_X_tab_1
+y=POS_Y_tab_1
+z=POS_Z_tab_1
+color=yes
+colorscalar=density_tab_2
+colortable=volren_glow
+logscale=yes
