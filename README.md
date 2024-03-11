@@ -125,7 +125,7 @@ Workflow n. 3.2 (option "pointdistribute" in the VisIVOFilter command): Generate
 ------------------------
 The workflow "docker_VisIVO_ImpFilterView_Workflow_GADGET_PD.cwl" can be executed with the command:
 
-cwl-runner docker_VisIVO_ImpFilterView_Workflow_GADGET_PD.cwl docker_VisIVO_ImpFilterView_Workflow_GADGET_PD.cwl
+cwl-runner docker_VisIVO_ImpFilterView_Workflow_GADGET_PD.cwl docker-job_VisIVO_ImpFilterView_Workflow_GADGET_PD.yml
 
 contained in the cwl-runner_launch_command_VisIVO_ImpFilterView_Workflow_GADGET_PD.txt file.
 
