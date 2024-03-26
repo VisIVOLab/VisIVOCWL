@@ -1,0 +1,9 @@
+srcImpW0:
+  class: File
+  path: paramFile_Imp.txt
+srcImpW1:
+  class: File
+  path: clusterfields4.ascii
+srcViewW0:
+  class: File
+  path: paramFile_View.txt 
