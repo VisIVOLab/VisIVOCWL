@@ -1,6 +1,10 @@
 op=pointproperty
-resolution=64 64 64
-points=POS_X POS_Y POS_Z
+x_res=64
+y_res=64
+z_res=64
+x_col=POS_X
+y_col=POS_Y
+z_col=POS_Z
 append=yes
 outcol=density
 file=NewTableHALO.bin
