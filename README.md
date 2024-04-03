@@ -26,6 +26,7 @@ To make this workflow work, in the directory of the workflow "docker_VisIVO_ImpV
 1) paramFile_Imp.txt
 2) clusterfields4.ascii
 3) paramFile_View.txt
+4) streamflow.yml
 
 These are the inputs of the workflow, as described in the "docker-job_VisIVO_ImpView_Workflow.yml" file.
 The first command of the workflow, "VisIVOImporter ...", generates the "VisIVOServerBinary.bin" and the "VisIVOServerBinary.bin.head" files, that are taken as input by the second command of the workflow, "VisIVOViewer ...". These two files does not exist anymore at the end of the workflow execution. The workflow generates as output four .png images, "VisIVOServerImage0.png", "VisIVOServerImage1.png", "VisIVOServerImage2.png", and "VisIVOServerImage3.png", that are saved in four different directories.
