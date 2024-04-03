@@ -1,0 +1,3 @@
+fformat=gadget
+file=snapdir/snap_091.0
+out=NewTable
