@@ -119,6 +119,11 @@ To make this workflow work, in the directory of the workflow "docker_VisIVO_ImpF
 Files 1-6 are the inputs of the workflow, as described in the "docker-job_VisIVO_ImpFilterF1F2View_Workflow_GADGET.yml" file.
 The first command of the workflow, "VisIVOImporter ...", generates the "NewTableHALO.bin", "NewTableHALO.bin.head", "NewTableGAS.bin", and "NewTableGAS.bin.head" files, in four different subdirectories. The second command of the workflow, "VisIVOFilter ...", generates the "density.bin" and "density.head" files, in two different subdirectories. The third command of the workflow, "VisIVOFilter ...", merges the "density.bin" and the "NewTableHALO.bin" files in the resulting file "NewTableHALOMerge.bin", generating the "NewTableHALOMerge.bin" and "NewTableHALOMerge.bin.head" files in two different subdirectories. The workflow (the last step of the workflow, given by the "VisIVOViewer ..." command) generates as output four .png images from the "NewTableHALOMerge.bin" and "NewTableHALOMerge.bin.head" inputs, "VisIVOServerImage0.png", "VisIVOServerImage1.png", "VisIVOServerImage2.png", and "VisIVOServerImage3.png", that are saved in four different subdirectories. All the subproducts of the workflow do not exist anymore at the end of the workflow execution.
 
+To execute the workflow on singularity, the following command has to be executed:
+
+cwl-runner --streamflow-file streamflow.yml docker_VisIVO_ImpFilterF1F2View_Workflow_GADGET.cwl docker-job_VisIVO_ImpFilterF1F2View_Workflow_GADGET.yml
+
+and the "streamflow.yml" file has to be present in the input directory with the other files listed above.
 
 
 ------------------------
@@ -164,3 +169,9 @@ To make this workflow work, in the directory of the workflow "docker_VisIVO_ImpF
 
 Files 1-4 are the inputs of the workflow, as described in the "docker-job_VisIVO_ImpFilterView_Workflow_GADGET_PD.yml" file.
 The first command of the workflow, "VisIVOImporter ...", generates the "NewTableHALO.bin", "NewTableHALO.bin.head", "NewTableGAS.bin", and "NewTableGAS.bin.head" files, in four different subdirectories. The second command of the workflow, "VisIVOFilter ...", generates the "densityvolume.bin" and "densityvolume.head" files, in two different subdirectories. The workflow (the last step of the workflow, given by the "VisIVOViewer ..." command) generates as output four .png images from the "densityvolume.bin" and "densityvolume.bin.head" inputs, "VisIVOServerImage0.png", "VisIVOServerImage1.png", "VisIVOServerImage2.png", and "VisIVOServerImage3.png", that are saved in four different subdirectories. All the subproducts of the workflow do not exist anymore at the end of the workflow execution.
+
+To execute the workflow on singularity, the following command has to be executed:
+
+cwl-runner --streamflow-file streamflow.yml docker_VisIVO_ImpFilterView_Workflow_GADGET_PD.cwl docker-job_VisIVO_ImpFilterView_Workflow_GADGET_PD.yml
+
+and the "streamflow.yml" file has to be present in the input directory with the other files listed above.
