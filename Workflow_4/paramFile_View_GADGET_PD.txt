@@ -1,0 +1,9 @@
+input=densityvolume.bin
+out=VisIVOServerImage
+volume=yes
+vrendering=yes
+vrenderingfield=Constant
+color=yes
+colortable=volren_glow
+showbox=yes
+showlut=yes
