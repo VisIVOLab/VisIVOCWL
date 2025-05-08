@@ -6,5 +6,6 @@ vrenderingfield=Constant
 color=yes
 colortable=volren_glow
 autorange=yes
+showaxes=yes
 showbox=yes
 showlut=yes
