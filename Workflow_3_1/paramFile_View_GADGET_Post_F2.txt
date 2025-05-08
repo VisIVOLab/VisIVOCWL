@@ -7,3 +7,6 @@ color=yes
 colorscalar=density_tab_2
 colortable=volren_glow
 logscale=yes
+showbox=yes
+showaxes=yes
+showlut=yes
