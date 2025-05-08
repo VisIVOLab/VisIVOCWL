@@ -5,7 +5,7 @@ class: CommandLineTool
 baseCommand: VisIVOFilter
 requirements:
   DockerRequirement:
-    dockerPull: nicolatuccari/visivotest:latest
+    dockerPull: visivolab/visivoserver:latest
   InitialWorkDirRequirement:
     listing:
       - $(inputs.srcFilterF10)
