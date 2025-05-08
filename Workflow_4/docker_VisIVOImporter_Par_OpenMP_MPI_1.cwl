@@ -5,7 +5,7 @@ class: CommandLineTool
 baseCommand: mpirun
 requirements:
   DockerRequirement:
-    dockerPull: nicolatuccari/visivotest:latest
+    dockerPull: visivolab/visivoserver:latest
   InitialWorkDirRequirement:
     listing:
       - $(inputs.srcImp1)
