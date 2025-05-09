@@ -5,7 +5,7 @@ class: CommandLineTool
 baseCommand: VisIVOImporter
 requirements:
   DockerRequirement:
-    dockerPull: neaniasspace/visivoserver:latest
+    dockerPull: visivolab/visivoserver:latest
   InitialWorkDirRequirement:
     listing:
       - $(inputs.srcImp1)
