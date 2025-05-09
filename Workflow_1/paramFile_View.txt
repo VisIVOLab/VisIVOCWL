@@ -5,3 +5,5 @@ y=Y
 z=Z
 scale=yes
 glyphs=pixel
+showbox=yes
+showaxes=yes
