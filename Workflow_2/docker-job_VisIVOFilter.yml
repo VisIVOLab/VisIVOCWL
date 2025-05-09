@@ -1,9 +1,0 @@
-srcFilter0:
-  class: File
-  path: paramFile_Filter.txt 
-srcFilter1:
-  class: File
-  path: NewTableHALO.bin
-srcFilter2:
-  class: File
-  path: NewTableHALO.bin.head

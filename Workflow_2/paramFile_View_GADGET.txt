@@ -1,9 +1,0 @@
-input=NewTableHALO.bin
-out=VisIVOServerImage
-x=POS_X
-y=POS_Y
-z=POS_Z
-color=yes
-colorscalar=density
-colortable=volren_glow
-logscale=yes
