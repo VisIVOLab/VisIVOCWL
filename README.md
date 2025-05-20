@@ -107,7 +107,7 @@ and the "streamflow.yml" file has to be present in the input directory with the 
 
 
 ------------------------
-Workflow n. 3 (option "pointdistribute" in the VisIVOFilter command): Generate four .png images by running in sequence a VisIVO importer, a VisIVO filter and a VisIVO viewer instances, taking as input GADGET data and running the importer in parallel with MPI + OpenMP.
+Workflow n. 4 (option "pointdistribute" in the VisIVOFilter command): Generate four .png images by running in sequence a VisIVO importer, a VisIVO filter and a VisIVO viewer instances, taking as input GADGET data and running the importer in parallel with MPI + OpenMP.
 ------------------------
 The workflow "docker_VisIVO_ImpFilterView_Workflow_GADGET_PD.cwl" can be executed with the command:
 
@@ -157,7 +157,7 @@ cwl-runner --streamflow-file streamflow.yml docker_VisIVO_ImpFilterView_Workflow
 and the "streamflow.yml" file has to be present in the input directory with the other files listed above.
 
 ------------------------
-Workflow n. 4: Generate four .png images and statistics by running a VisIVO importer, two VisIVO filters and a VisIVO viewer instance, taking as input GADGET data and running the importer in parallel with MPI + OpenMP.
+Workflow n. 5 : Generate four .png images and statistics by running a VisIVO importer, two VisIVO filters and a VisIVO viewer instance, taking as input GADGET data and running the importer in parallel with MPI + OpenMP.
 ------------------------
 The workflow "docker_VisIVO_ImpFilterView_Workflow_GADGET_PD.cwl" can be executed with the command:
 
