@@ -1,4 +1,0 @@
-NewTableHALO.bin POS_X
-NewTableHALO.bin POS_Y
-NewTableHALO.bin POS_Z
-density.bin density

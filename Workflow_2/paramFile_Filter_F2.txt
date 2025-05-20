@@ -1,3 +1,0 @@
-op=merge
-out=NewTableHALOMerge.bin
-filelist=tabselection.txt

@@ -1,5 +1,0 @@
-op=pointdistribute
-resolution=64 64 64
-points=POS_X POS_Y POS_Z
-out=densityvolume.bin
-file=NewTableHALO.bin

@@ -1,4 +1,0 @@
-op=statistic
-histogram=yes
-out=results.txt
-file=NewTableHALO.bin

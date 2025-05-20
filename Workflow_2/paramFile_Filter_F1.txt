@@ -1,6 +1,0 @@
-op=pointproperty
-resolution=64 64 64
-points=POS_X POS_Y POS_Z
-out=density.bin
-outcol=density
-file=NewTableHALO.bin
