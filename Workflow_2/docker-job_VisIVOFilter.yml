@@ -1,0 +1,9 @@
+srcFilterF0:
+  class: File
+  path: paramFile_Filter.txt
+srcFilterF1:
+  class: File
+  path: NewTableHALO.bin
+srcFilterF2:
+  class: File
+  path: NewTableHALO.bin.head
