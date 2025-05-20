@@ -1,0 +1,4 @@
+op=randomizer
+perc=50.0
+out=NewTableHALORand.bin
+file=NewTableHALO.bin

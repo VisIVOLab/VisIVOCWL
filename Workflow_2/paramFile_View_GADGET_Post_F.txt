@@ -1,0 +1,8 @@
+input=NewTableHALORand.bin
+out=VisIVOServerImage
+x=POS_X
+y=POS_Y
+z=POS_Z
+showbox=yes
+showaxes=yes
+showlut=yes
