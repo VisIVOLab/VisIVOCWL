@@ -1,0 +1,20 @@
+messageW: 2
+srcImpnpW: 4
+srcImpW0:
+  class: File
+  path: paramFile_Imp_Par_MPI.txt
+srcImpW1:
+  class: Directory
+  path: snapdir
+srcFilterF1W0:
+  class: File
+  path: paramFile_Filter_F1.txt
+srcFilterF2W0:
+  class: File
+  path: paramFile_Filter_F2.txt
+srcFilterF2W1:
+  class: File
+  path: tabselection.txt
+srcViewW0:
+  class: File
+  path: paramFile_View_GADGET_Post_F2.txt 

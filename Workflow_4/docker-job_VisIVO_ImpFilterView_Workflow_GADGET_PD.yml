@@ -9,6 +9,9 @@ srcImpW1:
 srcFilterF1W0:
   class: File
   path: paramFile_Filter_PD.txt
+srcFilterF2W0:
+  class: File
+  path: paramFile_FilterStat_PD.txt
 srcViewW0:
   class: File
   path: paramFile_View_GADGET_PD.txt 

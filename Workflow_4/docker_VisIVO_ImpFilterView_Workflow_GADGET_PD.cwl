@@ -7,12 +7,16 @@ inputs:
   srcImpW0: File
   srcImpW1: Directory
   srcFilterF1W0: File
+  srcFilterF2W0: File
   srcViewW0: File
 
 outputs:
   outViewW:
     type: File[]
     outputSource: viewer/outView
+  outStatF:
+    type: File
+    outputSource: filter2/outFilterF21
 
 steps:
   importer:
@@ -23,19 +27,26 @@ steps:
       srcImp0: srcImpW0
       srcImp1: srcImpW1
     out: [outImp0, outImp1, outImp2, outImp3]
-  filter:
+  filter1:
     run: docker_VisIVOFilter_PD.cwl
     in:
       srcFilterF10: srcFilterF1W0
       srcFilterF11: importer/outImp0
       srcFilterF12: importer/outImp1
     out: [outFilterF10, outFilterF11]
+  filter2:
+    run: docker_VisIVOFilterStat_PD.cwl
+    in:
+      srcFilterF20: srcFilterF2W0
+      srcFilterF21: importer/outImp0
+      srcFilterF22: importer/outImp1
+    out: [outFilterF20, outFilterF21]
   viewer:
     run: docker_VisIVOViewer_GADGET_PD.cwl 
     in:
       srcView0: srcViewW0
-      srcView1: filter/outFilterF10
-      srcView2: filter/outFilterF11
+      srcView1: filter1/outFilterF10
+      srcView2: filter1/outFilterF11
     out: [outView]
 
 $namespaces:

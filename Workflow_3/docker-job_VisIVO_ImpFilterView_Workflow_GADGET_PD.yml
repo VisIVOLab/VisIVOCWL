@@ -1,0 +1,14 @@
+messageW: 2
+srcImpnpW: 4
+srcImpW0:
+  class: File
+  path: paramFile_Imp_Par_MPI.txt
+srcImpW1:
+  class: Directory
+  path: snapdir
+srcFilterF1W0:
+  class: File
+  path: paramFile_Filter_PD.txt
+srcViewW0:
+  class: File
+  path: paramFile_View_GADGET_PD.txt 
