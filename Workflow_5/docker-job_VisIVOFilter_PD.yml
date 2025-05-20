@@ -1,9 +1,0 @@
-srcFilterF10:
-  class: File
-  path: paramFile_Filter_PD.txt 
-srcFilterF11:
-  class: File
-  path: NewTableHALO.bin
-srcFilterF12:
-  class: File
-  path: NewTableHALO.bin.head
