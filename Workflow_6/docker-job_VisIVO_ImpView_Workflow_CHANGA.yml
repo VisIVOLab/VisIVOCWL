@@ -1,0 +1,9 @@
+srcImpW0:
+  class: File
+  path: paramFile_Imp.txt
+srcImpW1:
+  class: File
+  path: TIPSY.03000
+srcViewW0:
+  class: File
+  path: paramFile_View.txt 

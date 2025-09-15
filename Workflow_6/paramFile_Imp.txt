@@ -1,0 +1,3 @@
+fformat=changa
+file=TIPSY.03000
+out=VisIVOServerBinary

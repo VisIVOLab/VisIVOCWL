@@ -1,0 +1,12 @@
+input=VisIVOServerBinaryGAS.bin
+out=VisIVOServerImage
+x=POS_X
+y=POS_Y
+z=POS_Z
+color=yes
+colorscalar=RHO
+colortable=volren_glow
+logscale=yes
+showbox=yes
+showaxes=yes
+showlut=yes
