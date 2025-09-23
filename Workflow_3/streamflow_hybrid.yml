@@ -1,0 +1,70 @@
+version: v1.0
+workflows:
+  visivo:
+    type: cwl
+    config:
+      file: docker_VisIVO_ImpFilterF1F2View_Workflow_GADGET.cwl
+      settings: docker-job_VisIVO_ImpFilterF1F2View_Workflow_GADGET.yml
+      docker:
+        - step: /
+          deployment:
+            type: none
+            config: {}
+        - step: /viewer
+          deployment:
+            type: docker
+            config: {}
+    bindings:                         
+      - step: /             
+        target:                       
+          deployment: c3s
+          service: broadwell  
+      - step: /viewer            
+        target:                       
+          deployment: locally
+      - port: /srcImpW0             
+        target:                       
+          deployment: c3s-ssh 
+          workdir: /beegfs/home/alberto.mulone/VISIVO/VisIVOCWL/Workflow_3
+      - port: /srcImpW1             
+        target:                       
+          deployment: c3s-ssh
+          workdir: /beegfs/home/alberto.mulone/VISIVO/VisIVOCWL
+      - port: /srcFilterF1W0             
+        target:                       
+          deployment: c3s-ssh
+          workdir: /beegfs/home/alberto.mulone/VISIVO/VisIVOCWL/Workflow_3 
+      - port: /srcFilterF2W0             
+        target:                       
+          deployment: c3s-ssh
+          workdir: /beegfs/home/alberto.mulone/VISIVO/VisIVOCWL/Workflow_3 
+      - port: /srcFilterF2W1             
+        target:                       
+          deployment: c3s-ssh
+          workdir: /beegfs/home/alberto.mulone/VISIVO/VisIVOCWL/Workflow_3
+
+deployments:
+  locally:
+    type: local 
+    config: {}
+    workdir: /home/ubuntu/volume/tmp
+  c3s-ssh:
+    type: ssh 
+    config: 
+      nodes:
+        - c3sfr1.di.unito.it
+      username: alberto.mulone
+    workdir: VISIVO/VisIVOCWL/tmp
+  c3s:
+    type: slurm 
+    config:
+      maxConcurrentJobs: 10
+      services:
+        broadwell: 
+          file: templates/hpc4ai-broadwell.sh
+    wraps: c3s-ssh
+
+database:
+  type: default
+  config:
+    connection: .streamflow/sqlite.db
